@@ -1,11 +1,11 @@
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -13,6 +13,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: aqua;
+  padding-right: 30px;
 }
 
 .head1 {
@@ -20,8 +21,19 @@ header {
   display: block;
   color: #f2f2f2;
   text-align: center;
+}
+
+.head1 a {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   text-decoration: none;
   font-size: 17px;
+  padding-right: 30px;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,6 +58,10 @@ header {
   }
 }
 
+#hi {
+  padding-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .head1.responsive {
     position: absolute;
@@ -54,7 +70,7 @@ header {
     margin-right: 200px;
     padding-left: 20px;
     color: blue;
-    border-color: #f2f2f2;
+    border-color: #f8f0e3;
   }
   .head1.responsive a {
     text-decoration: none;
@@ -70,6 +86,31 @@ header {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+.btn2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .btn2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 5px;
+  }
+}
+
+.but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .but {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

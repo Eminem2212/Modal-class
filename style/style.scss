@@ -1,20 +1,29 @@
 body {
-    margin: 0px;
+    margin: 0;
+    
 }
 
 header {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     background-color: aqua;
+    padding-right: 30px;
 }
 .head1 {
     text-decoration: none;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    text-decoration: none;
-    font-size: 17px;
+
+    a {
+        justify-content: center !important;
+        text-decoration: none;
+        font-size: 17px;
+        padding-right: 30px;
+        color: #000;
+        align-items: center;
+    }
     @media screen and (max-width: 600px) {
         display: none;
     }
@@ -31,6 +40,9 @@ header {
         display: block;
     }
 }
+#hi {
+    padding-right: 10px;
+}
 @media screen and (max-width: 600px) {
     .head1.responsive {
         position: absolute;
@@ -39,8 +51,8 @@ header {
         margin-right: 200px;
         padding-left: 20px;
         color: blue;
-        border-color: #f2f2f2;
-        a{
+        border-color: #f8f0e3;
+        a {
             text-decoration: none;
             color: black;
             border: 2px solid dark;
@@ -56,4 +68,18 @@ header {
         display: block;
         text-align: left;
     }
+}
+.btn2 {
+    display: none;
+    @media screen and (max-width: 600px) {
+        display: flex;
+        border-radius: 5px;
+    }
+}
+.but{
+    display: flex;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+
 }

@@ -1,6 +1,7 @@
 function myFunction() {
     var x = document.getElementById("h1");
-    
+    var i = document.getElementById("hi");
+
 
     if (x.className === "head1") {
         x.className += " responsive";
