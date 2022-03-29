@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aqua;
+}
+
+.head1 {
+  text-decoration: none;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .head1 {
+    display: none;
+  }
+}
+
+.head1 a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head1.responsive {
+    position: absolute;
+    display: block;
+    padding-top: 220px;
+    margin-right: 200px;
+    padding-left: 20px;
+    color: blue;
+    border-color: #f2f2f2;
+  }
+  .head1.responsive a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid dark;
+  }
+  .head1.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .head1.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */
